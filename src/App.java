@@ -7,7 +7,7 @@ public class App {
        //Mandar a imprimir mi arreglo
        burbuja.imprimir(numeros);
 
-       int [] arregloOrdenadoBuble =burbuja.sortByBubble(numeros);
+       int [] arregloOrdenadoBuble =burbuja.sortByBubble(numeros, false);
        burbuja.imprimir(arregloOrdenadoBuble);
       
 
