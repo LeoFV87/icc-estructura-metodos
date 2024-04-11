@@ -1,4 +1,11 @@
 public class MetodosOrdenamiento {
+    //Metodo Constructor
+    //No tiene el void ni el Int
+    //Es el nombre de la clase
+    //Se va a ejecutar automaticamente cuando instancie la clase
+    public MetodosOrdenamiento(){
+
+    }
     
   // Metodo que devuelve un arreglo de enteros ordenados por Burbuja
 
@@ -61,18 +68,21 @@ return arreglo;
 
    // Metodo que devuelve un arreglo de enteros ordenados por Burbuja
 
-public int [] InsertionSort (int[] arreglo){
-    //Codigo
-    
-
-
-
-
-
+   public int[] insertionSort(int[] arreglo) {
+    for (int i = 1; i < arreglo.length; i++) {
+      int actual = arreglo[i];
+      int j = i - 1;
+  
+      while (j >= 0 && arreglo[j] > actual) {
+        arreglo[j + 1] = arreglo[j];
+        j--;
+      }
+      arreglo[j + 1] = actual;
+    }
+  
     return arreglo;
-
-    
-}
+  }
+  
 
 public void imprimir (int[] arreglo){
 
@@ -82,8 +92,5 @@ public void imprimir (int[] arreglo){
     }
     System.out.println();
 }
-
-
-
 
 }
